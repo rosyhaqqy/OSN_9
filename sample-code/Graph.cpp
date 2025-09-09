@@ -140,7 +140,7 @@ struct graph
             parent[parent2] = parent1;
     }
 
-    // Kruskal
+    // Kruskal dengan EdgeList
     void kruskal(vector<pair<long, pair<long, long>>> &result)
     {
         vector<long> parent;
@@ -163,7 +163,7 @@ struct graph
         }
     }
 
-    // Prim's
+    // Prim's dengan Adjacency List
     long prims(long start, vector<pair<long, pair<long, long>>> &result)
     {
         vector<bool> inMST(vertexCount, false);
@@ -205,6 +205,16 @@ struct graph
         return mstWeight;
     }
 };
+
+
+// 5 7
+// 1 2 4
+// 1 3 4
+// 1 4 6
+// 1 5 6
+// 2 3 2
+// 3 4 8
+// 4 5 9
 
 int main()
 {

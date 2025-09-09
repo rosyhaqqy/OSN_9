@@ -20,11 +20,6 @@ Langkah-langkah Algoritma Prim:
 3. Ambil *edge* dengan *weight* terkecil dari *priority queue*. Jika *vertex* tujuan *edge* tersebut belum ada dalam MST, masukkan ke MST.
 4. Ulangi langkah 2–3 sampai semua *vertex* sudah masuk MST (jumlah *edge* dalam MST = V – 1).
 
-### Contoh
-
-![contoh](https://media.geeksforgeeks.org/wp-content/cdn-uploads/mst.png)
-
-> Source: GeeksforGeeks
 
 ### Implementasi
 
