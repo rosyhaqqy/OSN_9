@@ -25,10 +25,10 @@ Langkah-langkah Algoritma Prim:
 
 ```c++
 long prims(long start, vector<pair<long, pair<long, long>>> &result){
-    vector<bool> inMST(vertexCount, false);
+    vector<bool> inMST(vertexCount, false); // apakah suatu vertex itu sudah masuk kedalam spanning tree
     priority_queue<pair<long, pair<long, long>>,
                    vector<pair<long, pair<long, long>>>,
-                   greater<pair<long, pair<long, long>>>> pq;
+                   greater<pair<long, pair<long, long>>>> pq; // pq untuk menyimpan kandidat edge
     long mstWeight = 0;
 
     inMST[start] = true;
@@ -36,18 +36,18 @@ long prims(long start, vector<pair<long, pair<long, long>>> &result){
         pq.push({edge.second, {start, edge.first}});
     }
 
-    while(!pq.empty() && result.size() < vertexCount-1){
+    while(!pq.empty() && result.size() < vertexCount-1){ // akan berjalan selama kandidatnya belum habis dan selama vertexnya masih ada yang belum masuk tree
         auto [w, uv] = pq.top(); pq.pop();
         long u = uv.first;
         long v = uv.second;
 
-        if(inMST[v]) continue;
+        if(inMST[v]) continue; // jika vertexnya sudah ada didalam tree
 
         inMST[v] = true;
         result.push_back({w,{u,v}});
         mstWeight += w;
 
-        for(auto edge : adjList[v]){
+        for(auto edge : adjList[v]){ // untuk menambahkan kandidat dari vertex yang telah ditambahkan
             if(!inMST[edge.first]){
                 pq.push({edge.second,{v,edge.first}});
             }
