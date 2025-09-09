@@ -4,7 +4,7 @@
 
 ![ilustrasi](https://user-images.githubusercontent.com/86661387/230758011-459c577d-0bba-4a86-b50f-6d6b3f5db727.png)
 
-Terdapat 2 implementasi yang terkenal untuk mengimplementasikan Minimum Spanning Tree, yaitu Algoritma Kruskal (O($E log V$)) dan Algoritma Prim (O($(V+E) log V$)). Namun yang akan kita bahas saat ini adalah Algoritma Kruskal.
+Terdapat 2 implementasi yang terkenal untuk mengimplementasikan Minimum Spanning Tree, yaitu Algoritma Kruskal (O($E log V$)) dan Algoritma Prim (O($(V+E) log V$)).
 
 ---
 
