@@ -1,0 +1,1 @@
+{"name":"Local: bfscase","url":"c:\\Users\\WEYNARD\\Desktop\\OSN-9\\sample-code\\bfscase.cpp","tests":[{"id":1757383182875,"input":"1\n4 2 1 4\n1 2 1\n2 4 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\WEYNARD\\Desktop\\OSN-9\\sample-code\\bfscase.cpp","group":"local","local":true}
